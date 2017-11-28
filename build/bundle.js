@@ -34220,8 +34220,6 @@ module.exports = angular
 	})
 	.name;
 },{"./first.controller":5,"./first.module":6}],5:[function(require,module,exports){
-angular = require('angular');
-
 module.exports = angular
 	.module('firstModule')
 	.controller('firstController', firstControllerImpl)
@@ -34238,13 +34236,11 @@ function firstControllerImpl() {
 		console.log('Init complete!')
 	}
 }
-},{"angular":2}],6:[function(require,module,exports){
-angular = require('angular');
-
+},{}],6:[function(require,module,exports){
 module.exports = angular
 	.module('firstModule', [])
 	.name;
-},{"angular":2}],7:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 module.exports = function (someService) {
 	var service = this;
 	
@@ -34255,14 +34251,21 @@ module.exports = function (someService) {
 	}
 }
 },{}],8:[function(require,module,exports){
-module.exports = function () {
-	let service = this;
+module.exports = angular
+	.module('firstModule')
+	.service('someService', someServiceImpl)
+	.name;
+	
+function someServiceImpl() {
+	var service = this;
 	
 	service.consoleMe = consoleMe;
 	service.testVar = 0;
 	
-	function consoleMe () {
+	function consoleMe (val) {
+		var a = val;
 		service.testVar++;
+		
 	}
 	
 	return service;

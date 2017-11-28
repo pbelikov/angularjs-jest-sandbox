@@ -1,5 +1,3 @@
-angular = require('angular');
-
 module.exports = angular
 	.module('firstModule')
 	.service('someService', someServiceImpl)
@@ -16,6 +14,4 @@ function someServiceImpl() {
 		service.testVar++;
 		
 	}
-	
-	return service;
 }

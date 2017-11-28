@@ -1,5 +1,3 @@
-angular = require('angular');
-
 module.exports = angular
 	.module('firstModule')
 	.controller('firstController', firstControllerImpl)
