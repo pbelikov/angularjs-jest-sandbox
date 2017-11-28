@@ -1,0 +1,30 @@
+{
+  "name": "angular-modularization",
+  "version": "0.0.1",
+  "description": "Lets make some modules from AngularJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "grunt": "^1.0.1",
+    "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "angular": "^1.6.7"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": ["js"],
+    "moduleDirectories": ["node_modules"],
+    "modules": true
+  }
+}
