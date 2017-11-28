@@ -9,8 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "angular-mocks": "^1.6.7",
     "babel-jest": "^21.2.0",
     "grunt": "^1.0.1",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-connect": "^1.0.2",
     "jest": "^21.2.1"
   },
   "dependencies": {
@@ -23,8 +26,12 @@
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
-    "moduleFileExtensions": ["js"],
-    "moduleDirectories": ["node_modules"],
-    "modules": true
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "setupTestFrameworkScriptFile": "./jest.init.js"
   }
 }

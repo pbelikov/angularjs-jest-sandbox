@@ -1,5 +1,12 @@
-module.exports = function () {
-	let service = this;
+angular = require('angular');
+
+module.exports = angular
+	.module('firstModule')
+	.service('someService', someServiceImpl)
+	.name;
+	
+function someServiceImpl() {
+	var service = this;
 	
 	service.consoleMe = consoleMe;
 	service.testVar = 0;

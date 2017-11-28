@@ -1,5 +1,9 @@
 var angular = require('angular');
 
+require('./first/first.module');
+
 module.exports = angular
-					.module('app', ['firstModule', 'secondModule'])
-					.name;
+	.module('sandbox', ['firstModule'])
+	.name;
+
+
