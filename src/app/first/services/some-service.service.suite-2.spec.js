@@ -15,7 +15,7 @@ describe('some-service', function() {
 	}));
 	
 	it('test 1: will do something', function() {
-		someService.consoleMe();
+		someService.consoleMe(common[10]);
 		
 		expect(someService.testVar).not.toEqual(0);
 	});

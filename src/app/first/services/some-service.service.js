@@ -11,8 +11,10 @@ function someServiceImpl() {
 	service.consoleMe = consoleMe;
 	service.testVar = 0;
 	
-	function consoleMe () {
+	function consoleMe (val) {
+		var a = val;
 		service.testVar++;
+		
 	}
 	
 	return service;
