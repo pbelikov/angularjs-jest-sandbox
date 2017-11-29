@@ -1,8 +1,7 @@
-require('./first.module');
+import angular from 'angular';
+import './first.module';
 
-var FirstController = require('./first.controller');
-
-module.exports = angular
+export default angular
 	.module('firstModule')
 	.component('firstComponent', {
 		bindings: {},

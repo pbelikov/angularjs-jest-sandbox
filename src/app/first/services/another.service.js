@@ -1,4 +1,4 @@
-module.exports = function (someService) {
+export default function (someService) {
 	var service = this;
 	
 	service.callAnother = callAnother;

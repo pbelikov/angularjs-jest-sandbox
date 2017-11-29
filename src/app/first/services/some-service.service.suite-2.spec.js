@@ -1,5 +1,7 @@
-require('../first.module');
-require('./some-service.service');
+import angular from 'angular';
+
+import firstModuleName from '../first.module';
+import './some-service.service';
 
 describe('some-service', function() {
 	var someService;
@@ -7,7 +9,7 @@ describe('some-service', function() {
 	angular.mock.module.sharedInjector();
 	
 	beforeAll(function(){
-        angular.mock.module(angular.module('firstModule').name);
+        angular.mock.module(firstModuleName);
     });
 	
 	beforeEach(inject(function(_someService_) {

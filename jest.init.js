@@ -1,4 +1,5 @@
-require('angular');
-require('angular-mocks');
+import 'angular';
+import 'angular-mocks';
+import common from './src/common';
 
-global.common = require('./src/common')();
+global.common = common;

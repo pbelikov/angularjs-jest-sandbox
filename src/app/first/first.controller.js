@@ -1,4 +1,6 @@
-module.exports = angular
+import angular from 'angular';
+
+export default angular
 	.module('firstModule')
 	.controller('firstController', firstControllerImpl)
 	.name;

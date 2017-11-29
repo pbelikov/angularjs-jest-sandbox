@@ -1,7 +1,7 @@
-module.exports = function() {
-	var largeArray = [];
+export default function() {
+	let largeArray = [];
 	
-	for (var i=0;i<100000000;i++) {
+	for (let i=0;i<100000000;i++) {
 		largeArray.push(i);
 	}
 	

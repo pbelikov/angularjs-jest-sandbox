@@ -1,4 +1,4 @@
-var angular = require('angular');
+import angular from 'angular';
 
-module.exports = angular
+export default angular
 	.module('second', []);

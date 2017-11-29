@@ -1,8 +1,8 @@
-var angular = require('angular');
+import angular from 'angular';
 
-require('./first/first.module');
+import './first/first.module';
 
-module.exports = angular
+export default angular
 	.module('sandbox', ['firstModule'])
 	.name;
 
