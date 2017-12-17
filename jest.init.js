@@ -1,4 +1,4 @@
 require('angular');
 require('angular-mocks');
 
-global.common = require('./src/common')();
+global.commonMethod = require('./src/common');

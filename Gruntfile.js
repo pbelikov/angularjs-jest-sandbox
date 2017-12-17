@@ -3,7 +3,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-html2js');
-	
+  grunt.loadNpmTasks('grunt-karma');
+
 	grunt.initConfig({
 	  connect: {
 	    server: {
@@ -21,7 +22,13 @@ module.exports = function(grunt) {
 		    },
 		    options: {}
 		  }
-	  }
+	  },
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js',
+        singleRun: true
+      }
+    }
 	});
 
 	grunt.registerTask('server', ['browserify', 'connect']);

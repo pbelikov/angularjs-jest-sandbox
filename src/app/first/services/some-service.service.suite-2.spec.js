@@ -3,7 +3,8 @@ require('./some-service.service');
 
 describe('some-service', function() {
 	var someService;
-	
+  var common = commonMethod();
+
 	angular.mock.module.sharedInjector();
 	
 	beforeAll(function(){
@@ -16,6 +17,7 @@ describe('some-service', function() {
 	
 	it('test 1: will do something', function() {
 		someService.consoleMe(common[10]);
+		console.log (common[10]);
 		
 		expect(someService.testVar).not.toEqual(0);
 	});
