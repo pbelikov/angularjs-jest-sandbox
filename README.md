@@ -10,7 +10,8 @@ Useful links:
 
 ### After clone
 
-1. npm install
+1. __npm install__
+2. You'll need Google Chrome installed (e.g. v62 to run Karma tests in Headless Chrome).
 
 ### How to run
 

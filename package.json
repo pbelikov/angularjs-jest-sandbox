@@ -19,7 +19,8 @@
     "jest": "^21.2.1",
     "karma": "^1.7.1",
     "karma-browserify": "^5.1.2",
-    "karma-chrome-launcher": "^2.2.0"
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1"
   },
   "dependencies": {
     "angular": "^1.6.7"
